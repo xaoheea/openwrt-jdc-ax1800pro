@@ -12,7 +12,7 @@ on:
 env:
   # 使用官方 ImmortalWrt 源 (安全可信)
   REPO_URL: https://github.com/immortalwrt/immortalwrt
-  REPO_BRANCH: master
+  REPO_BRANCH: openwrt-24.10
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: configs/jdc-ax1800pro.config
   DIY_P1_SH: scripts/diy-part1.sh
@@ -171,10 +171,14 @@ jobs:
         echo "- 编译时间: $(date +"%Y-%m-%d %H:%M")" >> release.txt
         echo "" >> release.txt
         echo "### 已包含插件" >> release.txt
-        echo "- PassWall (科学上网)" >> release.txt
-        echo "- udpxy (IPTV组播转单播)" >> release.txt
+        echo "- OpenClash (Clash Meta内核)" >> release.txt
+        echo "- AdGuard Home (去广告)" >> release.txt
+        echo "- iStore (应用商店)" >> release.txt
         echo "- Lucky 大吉 (DDNS/端口转发)" >> release.txt
-        echo "- FM350-GL 5G 模块支持" >> release.txt
+        echo "- Docker (容器支持)" >> release.txt
+        echo "- udpxy (IPTV组播转单播)" >> release.txt
+        echo "- SQM/IP限速/流量监控" >> release.txt
+        echo "- 5G 模块支持" >> release.txt
         echo "" >> release.txt
         echo "### 默认设置" >> release.txt
         echo "- IP: 192.168.1.1" >> release.txt
