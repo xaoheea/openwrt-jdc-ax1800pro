@@ -12,7 +12,7 @@ on:
 env:
   # 使用官方 ImmortalWrt 源 (安全可信)
   REPO_URL: https://github.com/immortalwrt/immortalwrt
-  REPO_BRANCH: openwrt-24.10
+  REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: configs/jdc-ax1800pro.config
   DIY_P1_SH: scripts/diy-part1.sh
